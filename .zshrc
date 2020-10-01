@@ -8,16 +8,20 @@ fi
 # 環境変数
 export LANG=ja_JP.UTF-8
 export PATH="/usr/local/bin:$PATH"
-export RBENV_ROOT="$HOME/.rbenv"
-export PATH="$RBENV_ROOT/bin:$RBENV_ROOT/shims:$PATH"
-eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+if command -v rbenv 1>/dev/null 2>&1; then
+    eval "$(rbenv init -)";
+fi
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 
 # ディレクトリに色付け
 alias ls='ls -G'
+
 # VSCodeを code で起動
 function code {
     if [[ $# = 0 ]]
@@ -63,8 +67,8 @@ zinit light-mode for \
     zinit-zsh/z-a-as-monitor \
     zinit-zsh/z-a-patch-dl \
     zinit-zsh/z-a-bin-gem-node
-
 ### End of Zinit's installer chunk
+
 # プロンプトのカスタマイズ
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 # 補完
