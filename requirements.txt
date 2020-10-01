@@ -7,8 +7,5 @@ opencv-python
 matplotlib
 pandas
 pandas-profiling
-jupyter
 jupyterlab
-requests
-lxml
 flake8
