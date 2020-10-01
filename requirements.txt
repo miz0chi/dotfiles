@@ -1,0 +1,14 @@
+###### Requirements without Version Specifiers ######`
+black
+numpy
+scipy
+pillow
+opencv-python
+matplotlib
+pandas
+pandas-profiling
+jupyter
+jupyterlab
+requests
+lxml
+flake8
