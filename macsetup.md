@@ -43,6 +43,7 @@
     - iosbuild, doc, 日本語
 * homebrew `$brew doctor`
 * vscode: サインインgithub
+* dockerdesktop
 * thunderbird
     - KAWAHARA Mizuki
     - kotojpn.sakura.ne.jp, STARTTLS
