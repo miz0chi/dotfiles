@@ -1,2 +1,3 @@
 # dotfiles
-冷やしdotfilesはじめました。
+<a href="">mac</a><br>
+<a href="">windows</a>
