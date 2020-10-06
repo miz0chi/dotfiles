@@ -26,6 +26,8 @@ alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin br
 ## lsに色つけ, 基本的にはexaを使用
 alias ls='ls -G'
 alias exa='exa --git --color always --time-style iso -lam'
+## pip一括アップデート
+alias pip-upgrade-all="pip list -o | tail -n +3 | awk '{ print \$1 }' | xargs pip install -U"
 
 ## VSCodeを code で起動
 function code {
