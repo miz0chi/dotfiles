@@ -7,24 +7,26 @@ fi
 
 # 環境変数
 export LANG=ja_JP.UTF-8
+## rbenv
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 if command -v rbenv 1>/dev/null 2>&1; then
     eval "$(rbenv init -)";
 fi
+## pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-export EDITOR=vim
-export VISUAL="$EDITOR"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+## デフォルトエディタ
+export EDITOR=vim
+export VISUAL="$EDITOR"
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
-
-# ディレクトリに色付け
+## lsに色つけ, exaでも良い
 alias ls='ls -G'
 
-# VSCodeを code で起動
+## VSCodeを code で起動
 function code {
     if [[ $# = 0 ]]
     then
@@ -39,9 +41,7 @@ function code {
 ## 日本語ファイルを扱えるようにする
 setopt print_eight_bit
 
-# ----------
-#    履歴
-# ----------
+## 履歴保持数
 export HISTFILE=~/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=10000
@@ -73,12 +73,12 @@ zinit light-mode for \
 
 # プロンプトのカスタマイズ
 zinit ice depth=1; zinit light romkatv/powerlevel10k
-# 補完
+## 補完
 zinit light zsh-users/zsh-autosuggestions
-# シンタックスハイライト
+## シンタックスハイライト
 zinit light zdharma/fast-syntax-highlighting
-# Ctrl+r でコマンド履歴を検索
-zinit light zdharma/history-search-multi-word
+## Ctrl+r でコマンド履歴を検索
+zinit load zdharma/history-search-multi-word
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
