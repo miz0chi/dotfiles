@@ -60,6 +60,7 @@ homebrewは事前に入れておく
 ```shell
 $brew install zsh
 $brew install git
+$brew install exa
 ```
 git初期値設定:名前・アドレス・キーチェイン・エディタ
 ```shell

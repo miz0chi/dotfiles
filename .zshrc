@@ -23,8 +23,9 @@ fi
 export EDITOR=vim
 export VISUAL="$EDITOR"
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
-## lsに色つけ, exaでも良い
+## lsに色つけ, 基本的にはexaを使用
 alias ls='ls -G'
+alias exa='exa --git --color always --time-style iso -lam'
 
 ## VSCodeを code で起動
 function code {
