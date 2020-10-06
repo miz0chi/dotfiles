@@ -6,6 +6,7 @@
 * マウス
     - 軌跡の速さ最速
     - スクロールの方向ナチュラル
+    - 加速オフ（ターミナル）`$defaults write .GlobalPreferences com.apple.mouse.scaling -1`
 * キーボード
     - キーのリピート最速, 時間右から2番
     - 修飾キーControl<->CapsLock
