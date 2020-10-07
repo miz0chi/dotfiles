@@ -19,10 +19,14 @@
     - nightshift 19:30~6:00
 * Finder
     - デスクトップ全表示
-    - 新規Finderウィンドウ-ホームディレクトリ
-    - サイドバー ホームディレクトリ
-    - 表示オプション 変更日, サイズ, すべてのサイズを計算, 種類オフ->デフォルトとして使用
-    - 詳細 すべてのファイル名拡張子表示, 現在のフォルダ内を検索
+    - 新規Finderウィンドウ: ホームディレクトリ
+    - サイドバー: ホームディレクトリ
+    - 表示オプション: 変更日, サイズ, すべてのサイズを計算, 種類オフ->デフォルトとして使用
+    - 詳細: すべてのファイル名拡張子表示, 現在のフォルダ内を検索
+* Dock
+    - 最近使ったアプリケーション表示オフ
+    - エフェクトをスケールに変更
+* アクティビティモニタ: ログイン時起動, DockアイコンCPU使用率表示
 * ターミナル
     - プロファイルiceberg
     - textボールドテキストにオフ
@@ -44,7 +48,7 @@
     - unity 2020.1.7f1, 2019.4.11f1
     - iosbuild, doc, 日本語
 * mono(stable)
-* vscode: サインインgithub, `which mono`をomnisharp:MonoPathに設定
+* vscode: サインインgithub, `$which mono`をomnisharp:MonoPathに設定
 * dockerdesktop
 * thunderbird
     - KAWAHARA Mizuki
