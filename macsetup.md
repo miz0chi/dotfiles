@@ -39,11 +39,12 @@
 * bitwarden
 * dropbox
 * google日本語入力: スペースの入力半角
+* homebrew `$brew doctor`
 * unityhub
     - unity 2020.1.7f1, 2019.4.11f1
-    - vsformac, iosbuild, doc, 日本語
-* homebrew `$brew doctor`
-* vscode: サインインgithub
+    - iosbuild, doc, 日本語
+* mono(stable)
+* vscode: サインインgithub, `which mono`をomnisharp:MonoPathに設定
 * dockerdesktop
 * thunderbird
     - KAWAHARA Mizuki
