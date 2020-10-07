@@ -41,7 +41,7 @@
 * google日本語入力: スペースの入力半角
 * unityhub
     - unity 2020.1.7f1, 2019.4.11f1
-    - iosbuild, doc, 日本語
+    - vsformac, iosbuild, doc, 日本語
 * homebrew `$brew doctor`
 * vscode: サインインgithub
 * dockerdesktop
