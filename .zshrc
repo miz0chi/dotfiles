@@ -28,6 +28,8 @@ alias ls='ls -G'
 alias exa='exa --git --color always --time-style iso -lam'
 ## pip一括アップデート
 alias pip-upgrade-all="pip list -o | tail -n +3 | awk '{ print \$1 }' | xargs pip install -U"
+## unityエディタログ
+alias unity-log="code ~/Library/Logs/Unity/Editor.log"
 
 ## VSCodeを code で起動
 function code {
