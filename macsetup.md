@@ -18,7 +18,7 @@
 * ディスプレイ
     - nightshift 19:30~6:00
 * Finder
-    - デスクトップ全表示
+    - デスクトップ: 全表示, 項目の詳細表示
     - 新規Finderウィンドウ: ホームディレクトリ
     - サイドバー: ホームディレクトリ
     - 表示オプション: 変更日, サイズ, すべてのサイズを計算, 種類オフ->デフォルトとして使用
@@ -33,6 +33,7 @@
     - カーソル垂直バー
     - フォントhackgen35nerdconsole-regular, 15pt
 * タイムマシン
+    - 除外にシステムファイルとxcode, officeを登録
 
 ## ソフトウェアインストール
 * xcode
@@ -59,6 +60,7 @@
     <a href="mailto:k_mizuki@koto.co.jp">k_mizuki@koto.co.jp</a>
     ```
 * slack
+* office
 
 ## 開発環境構築
 homebrewは事前に入れておく
