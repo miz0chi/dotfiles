@@ -43,12 +43,35 @@
 * office
 * windows terminal
 * ubuntu 20.04
+* フォント: HackGen35NerdConsole-Regular
 
 ## 開発環境構築
+
+### WSL2セットアップ
 管理者としてPowerShellを開き、以下を実行
-```shell
-$dism.exe ...
+linux用windowsサブシステムを有効にする
+```PowerShell
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
+仮想マシンの機能を有効にする
+```PowerShell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+最新の<a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">x64 マシン用 WSL2 Linux カーネル更新プログラム パッケージ</a>をダウンロード
+
+WSL2を既定に設定
+```PowerShell
+wsl --set-default-version 2
+```
+ユーザセッティングの追加
+```PowerShell
+code -n "$env:USERPROFILE\.wslconfig"
+```
+```.wslconfig
+[wsl2]
+swap=0
+```
+
 git初期値設定:名前・アドレス・キーチェイン・エディタ
 ```shell
 $git config —-global user.name “k_mizuki”
