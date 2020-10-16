@@ -80,7 +80,7 @@ settingを開き、defaultprofileをubuntuに変更
 ```json
 "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}"
 "theme": "dark"
-"fontFace": "HackGen35NerdConsole-Regular"
+"fontFace": "HackGen35Nerd Console"
 "fontSize": 12
 ```
 
