@@ -65,7 +65,6 @@ alias pip-upgrade-all="pip list -o | tail -n +3 | awk '{ print \$1 }' | xargs pi
 ## unityエディタログ
 alias unity-log="code ~/Library/Logs/Unity/Editor.log"
 ## 色付け
-eval `dircolors ~/.colorrc`
 alias ls='ls --color=auto'
 
 
