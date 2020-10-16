@@ -12,6 +12,7 @@
     - 名前変更 kawahara-windows-201002
 * ディスプレイ
     - 夜間モード 19:30~6:00
+* エクスプローラー表示設定: 隠しファイル、ファイル名拡張子
 
 ## ソフトウェアインストール
 * chrome
@@ -44,6 +45,8 @@
 * windows terminal
 * ubuntu 20.04
 * フォント: HackGen35NerdConsole-Regular
+* 7-zip
+* Adobe Acrobat Reader: 連続見開き、解像度システム設定
 
 ## 開発環境構築
 
@@ -72,42 +75,60 @@ code -n "$env:USERPROFILE\.wslconfig"
 swap=0
 ```
 
+### windows terminal
+settingを開き、defaultprofileをubuntuに変更
+```json
+"defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}"
+"theme": "dark"
+"fontFace": "HackGen35NerdConsole-Regular"
+"fontSize": 12
+```
+
+zsh導入
+```bash
+$ sudo apt install zsh
+```
+パスをコピーし`chsh`で貼り付け
+```bash
+$ chsh -s $(which zsh)
+```
+
 git初期値設定:名前・アドレス・キーチェイン・エディタ
-```shell
-$git config —-global user.name “k_mizuki”
-$git config --global user.email k_mizuki@koto.co.jp
-$git config —-global credential.helper osxkeychain
-$git config --global core.editor vim
+```zsh
+$ git config —-global user.name “k_mizuki”
+$ git config --global user.email k_mizuki@koto.co.jp
+$ git config --global core.editor vim
+$ git config --global credential.helper store
 ```
 ドットファイルクローン
-```shell
-$git clone (dotfiles)
+```zsh
+$ git clone (dotfiles)
 ```
 .zshrcをバックアップ
-```shell
-$mkdir backup
-$mv .zshrc backup
+```zsh
+$ mkdir backup
+$ mv .zshrc backup
 ```
 シンボリックリンク貼る
-```shell
-$ln -s dotfiles/.zshrc ~
+```zsh
+$ ln -s dotfiles/ubuntu/.zshrc ~
 ```
 新しいタブで再度読み込み（sourceはしないこと）command+t
 rubyインストール
-```shell
-$brew install rbenv
-$rbenv install -l
-$rbenv install 2.7.2
-$rbenv global 2.7.2
+```zsh
+$ brew install rbenv
+$ rbenv install -l
+$ rbenv install 2.7.2
+$ rbenv global 2.7.2
 ```
 pythonインストール
-```shell
-$brew install pyenv
-$pyenv install -l
-$pyenv install 3.8.5
-$pyenv global 3.8.5
+```zsh
+$ brew install pyenv
+$ pyenv install -l
+$ pyenv install 3.8.5
+$ pyenv global 3.8.5
 ```
 pyライブラリ一括インストール
-```shell
-$pip install -r dotfiles/requirements.txt
+```zsh
+$ pip install -r dotfiles/requirements.txt
 ```
