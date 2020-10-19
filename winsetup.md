@@ -4,7 +4,6 @@
 * コトネットワークデバイス登録
 * windows update
 * microsoft store アプリアップデート
-* oneドライブ自動起動停止
 * マウス
     - ポインターの精度を高めるオフ
     - 1600dpi
@@ -46,7 +45,7 @@
 * ubuntu 20.04
 * フォント: HackGen35NerdConsole-Regular
 * 7-zip
-* Adobe Acrobat Reader: 連続見開き、解像度システム設定
+* Adobe Acrobat Reader: 連続見開き、解像度システム設定、ツールパネルの現在の状態を記憶
 
 ## 開発環境構築
 
